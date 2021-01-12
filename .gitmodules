@@ -4,21 +4,12 @@
 [submodule "src/akros_joystick"]
 	path = src/akros_joystick
 	url = https://github.com/adityakamath/akros_joystick.git
-[submodule "src/akros_odom"]
-	path = src/akros_odom
-	url = https://github.com/adityakamath/akros_odom.git
 [submodule "src/arduino_sketchbook_ros"]
 	path = src/arduino_sketchbook_ros
 	url = https://github.com/adityakamath/arduino_sketchbook_ros.git
-[submodule "src/ros_jetbot2"]
-	path = src/ros_jetbot2
-	url = https://github.com/adityakamath/ros_jetbot2.git
 [submodule "src/ros_imu_rtimulib"]
 	path = src/ros_imu_rtimulib
 	url = https://github.com/adityakamath/ros_imu_rtimulib.git
-[submodule "src/ros_i2cpwm_board"]
-	path = src/ros_i2cpwm_board
-	url = https://github.com/adityakamath/ros_i2cpwm_board.git
 [submodule "src/ros_deep_learning"]
 	path = src/ros_deep_learning
 	url = https://github.com/adityakamath/ros_deep_learning.git
