@@ -28,3 +28,6 @@
 [submodule "src/akros_auto"]
 	path = src/akros_auto
 	url = https://github.com/adityakamath/akros_auto.git
+[submodule "src/akros_drive"]
+	path = src/akros_drive
+	url = https://github.com/adityakamath/akros_drive.git
