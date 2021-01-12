@@ -1,0 +1,11 @@
+ros_deep_learning
+/home/akros/akros1_ws/devel/.private/ros_deep_learning/cmake.lock /home/akros/akros1_ws/devel/./cmake.lock
+/home/akros/akros1_ws/devel/.private/ros_deep_learning/lib/libros_deep_learning_nodelets.so /home/akros/akros1_ws/devel/lib/libros_deep_learning_nodelets.so
+/home/akros/akros1_ws/devel/.private/ros_deep_learning/lib/ros_deep_learning/imagenet /home/akros/akros1_ws/devel/lib/ros_deep_learning/imagenet
+/home/akros/akros1_ws/devel/.private/ros_deep_learning/lib/ros_deep_learning/detectnet /home/akros/akros1_ws/devel/lib/ros_deep_learning/detectnet
+/home/akros/akros1_ws/devel/.private/ros_deep_learning/lib/ros_deep_learning/video_output /home/akros/akros1_ws/devel/lib/ros_deep_learning/video_output
+/home/akros/akros1_ws/devel/.private/ros_deep_learning/lib/ros_deep_learning/segnet /home/akros/akros1_ws/devel/lib/ros_deep_learning/segnet
+/home/akros/akros1_ws/devel/.private/ros_deep_learning/lib/ros_deep_learning/video_source /home/akros/akros1_ws/devel/lib/ros_deep_learning/video_source
+/home/akros/akros1_ws/devel/.private/ros_deep_learning/lib/pkgconfig/ros_deep_learning.pc /home/akros/akros1_ws/devel/lib/pkgconfig/ros_deep_learning.pc
+/home/akros/akros1_ws/devel/.private/ros_deep_learning/share/ros_deep_learning/cmake/ros_deep_learningConfig.cmake /home/akros/akros1_ws/devel/share/ros_deep_learning/cmake/ros_deep_learningConfig.cmake
+/home/akros/akros1_ws/devel/.private/ros_deep_learning/share/ros_deep_learning/cmake/ros_deep_learningConfig-version.cmake /home/akros/akros1_ws/devel/share/ros_deep_learning/cmake/ros_deep_learningConfig-version.cmake

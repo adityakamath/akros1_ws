@@ -1,0 +1,6 @@
+akros_joystick
+/home/akros/akros1_ws/devel/.private/akros_joystick/cmake.lock /home/akros/akros1_ws/devel/./cmake.lock
+/home/akros/akros1_ws/devel/.private/akros_joystick/lib/pkgconfig/akros_joystick.pc /home/akros/akros1_ws/devel/lib/pkgconfig/akros_joystick.pc
+/home/akros/akros1_ws/devel/.private/akros_joystick/lib/akros_joystick/akros_joystick_node /home/akros/akros1_ws/devel/lib/akros_joystick/akros_joystick_node
+/home/akros/akros1_ws/devel/.private/akros_joystick/share/akros_joystick/cmake/akros_joystickConfig-version.cmake /home/akros/akros1_ws/devel/share/akros_joystick/cmake/akros_joystickConfig-version.cmake
+/home/akros/akros1_ws/devel/.private/akros_joystick/share/akros_joystick/cmake/akros_joystickConfig.cmake /home/akros/akros1_ws/devel/share/akros_joystick/cmake/akros_joystickConfig.cmake

@@ -1,0 +1,7 @@
+ros_jetson_camera
+/home/akros/akros1_ws/devel/.private/jetson_camera/cmake.lock /home/akros/akros1_ws/devel/./cmake.lock
+/home/akros/akros1_ws/devel/.private/jetson_camera/lib/libjetson_camera_nodelet.so /home/akros/akros1_ws/devel/lib/libjetson_camera_nodelet.so
+/home/akros/akros1_ws/devel/.private/jetson_camera/lib/pkgconfig/jetson_camera.pc /home/akros/akros1_ws/devel/lib/pkgconfig/jetson_camera.pc
+/home/akros/akros1_ws/devel/.private/jetson_camera/lib/jetson_camera/jetson_camera_node /home/akros/akros1_ws/devel/lib/jetson_camera/jetson_camera_node
+/home/akros/akros1_ws/devel/.private/jetson_camera/share/jetson_camera/cmake/jetson_cameraConfig.cmake /home/akros/akros1_ws/devel/share/jetson_camera/cmake/jetson_cameraConfig.cmake
+/home/akros/akros1_ws/devel/.private/jetson_camera/share/jetson_camera/cmake/jetson_cameraConfig-version.cmake /home/akros/akros1_ws/devel/share/jetson_camera/cmake/jetson_cameraConfig-version.cmake
