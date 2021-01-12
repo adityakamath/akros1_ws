@@ -1,9 +1,6 @@
 [submodule "src/akros_jetson"]
 	path = src/akros_jetson
 	url = https://github.com/adityakamath/akros_jetson.git
-[submodule "src/akros_drive"]
-	path = src/akros_drive
-	url = https://github.com/adityakamath/akros_drive.git
 [submodule "src/akros_joystick"]
 	path = src/akros_joystick
 	url = https://github.com/adityakamath/akros_joystick.git
