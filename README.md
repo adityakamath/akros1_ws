@@ -11,19 +11,19 @@ Clone and build the [`jetson-inference`](https://github.com/dusty-nv/jetson-infe
 sudo apt-get install git cmake
 
 # clone the repo and submodules
-cd ~/workspace
-git clone https://github.com/dusty-nv/jetson-inference
-cd jetson-inference
-git submodule update --init
+$ cd ~/workspace
+$ git clone https://github.com/dusty-nv/jetson-inference
+$ cd jetson-inference
+$ git submodule update --init
 
 # build from source
-mkdir build
-cd build
-cmake ../
-make
+$ mkdir build
+$ cd build
+$ cmake ../
+$ make
 
 # install libraries
-sudo make install
+$ sudo make install
 ```
 
 ### Install non-ROS dependencies
@@ -68,7 +68,7 @@ $ sudo apt-get install ros-melodic-ros-base
 $ sudo apt-get install ros-melodic-vision-msgs ros-melodic-image-transport ros-melodic-image-publisher ros-melodic-joy
 
 # add ROS paths to environment
-sudo sh -c 'echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc'
+$ sudo sh -c 'echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc'
 ```
 
 Close and restart the terminal.
@@ -82,8 +82,7 @@ Reboot the system for the changes to take effect.
 $ cd ~
 $ git clone https://github.com/adityakamath/jetbot2_ws
 $ cd jetbot2_ws
-$ git submodule init
-$ git submodule update
+$ git submodule update --init
 $ git submodule foreach git pull origin main
 
 # Install remaining necessary dependencies
@@ -107,6 +106,30 @@ Turn the joystick on. If the connection is made, the LEDs on the Jetbot2 will tu
 
 
 ## Running the system on startup:
+The [`robot_upstart`](http://docs.ros.org/en/jade/api/robot_upstart/html/) package creates services from ROS launch files, so that they can be launched when the Jetson Nano is powered on. 
+
+```
+# Install robot_upstart and generate the startup service 'my_jetbot2'
+$ sudo apt-get install ros-melodic-robot-upstart
+$ cd jetbot2_ws && source devel/setup.bash
+$ rosrun robot_upstart install akros_jetson/launch/drive_jetbot2.launch --job my_jetbot2 --symlink
+```
+
+In the last command, 'my_jetbot2' can be replace with any custom name you want. The following commands can be used to start/stop/enable/disable the created service.
+
+```
+# to enable the service to start when the Jetson nano is next booted. To disable the service use 'disable'
+$ sudo systemctl enable my_jetbot2.service
+
+# to start the service. To stop, use 'stop' instead of 'start'
+$ sudo systemctl start my_jetbot2.service
+
+# to completely uninstall the service
+$ sudo systemctl uninstall my_jetbot2.service
+```
+
+More information can be found in this tutorial [here.](https://roboticsbackend.com/make-ros-launch-start-on-boot-with-robot_upstart/). Once the service is generated and enabled, the main launch file (drive_jetbot2.launch) should start running once the Jetson Nano is powered on. While the Jetson Nano takes a while to boot and the ROS code doesn't run immediately, you can tell from the colors of the LEDs. It should turn yellow once you have the joystick controller on. 
+
 
 
 
