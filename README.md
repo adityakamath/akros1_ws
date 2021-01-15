@@ -8,7 +8,7 @@ Clone and build the [`jetson-inference`](https://github.com/dusty-nv/jetson-infe
 
 ```bash
 # git and cmake should be installed
-sudo apt-get install git cmake
+$ sudo apt-get install git cmake
 
 # clone the repo and submodules
 $ cd ~/workspace
@@ -47,6 +47,13 @@ $ sudo usermod -aG i2c $USER
 
 The [`RTIMULib`](https://github.com/RPi-Distro/RTIMULib) libraries support the calibration/demonstration of multiple off-the-shelf IMU variants.
 
+```bash
+# clone the repo
+$ git clone https://github.com/RPi-Distro/RTIMULib
+$ cd RTIMULib/Linux
+```
+
+Further information about calibration, execution and demo can be found [here.](https://github.com/RPi-Distro/RTIMULib/tree/master/Linux)
 
 ### Install ROS Melodic
 
@@ -97,7 +104,7 @@ $ catkin_make
 ## Running the system from a terminal:
 Open a new terminal and run the following in the jetbo2_ws directory:
 
-```
+```bash
 $ source devel/setup.bash
 $ roslaunch akros_jetson drive_jetbot2.launch
 ```
@@ -108,7 +115,7 @@ Turn the joystick on. If the connection is made, the LEDs on the Jetbot2 will tu
 ## Running the system on startup:
 The [`robot_upstart`](http://docs.ros.org/en/jade/api/robot_upstart/html/) package creates services from ROS launch files, so that they can be launched when the Jetson Nano is powered on. 
 
-```
+```bash
 # Install robot_upstart and generate the startup service 'my_jetbot2'
 $ sudo apt-get install ros-melodic-robot-upstart
 $ cd jetbot2_ws && source devel/setup.bash
@@ -117,7 +124,7 @@ $ rosrun robot_upstart install akros_jetson/launch/drive_jetbot2.launch --job my
 
 In the last command, 'my_jetbot2' can be replace with any custom name you want. The following commands can be used to start/stop/enable/disable the created service.
 
-```
+```bash
 # to enable the service to start when the Jetson nano is next booted. To disable the service use 'disable'
 $ sudo systemctl enable my_jetbot2.service
 
