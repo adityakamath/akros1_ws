@@ -1,6 +1,8 @@
 # jetbot2_ws
 
-## ubuntu 18.04 + jetpack + jetbot install + link
+writeup
+
+## ubuntu 18.04 + jetpack + jetbot install + link --> + writeup
 
 ### Build jetson-inference
 
