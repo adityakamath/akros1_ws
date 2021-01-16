@@ -1,10 +1,16 @@
 # jetbot2_ws
 
-writeup
+This repository is the ROS catkin workspace for projects using the Jetbot2. The Jetbot2 is essentially an [`NVidia Jetbot`](https://jetbot.org/master/) with an additional IMU (MPU6050), an Arduino Nano with some NeoPixel LEDs as visual indicators, and support for a wireless SixAxis controller. The software is built using [`ROS Melodic`](http://wiki.ros.org/melodic) onn NVidia's Jetpack 4.3 image, which is based on Ubuntu 18.04. The ROS software uses the [`ros_deep_learning`](https://github.com/dusty-nv/ros_deep_learning) package directly, and the [`jetbot_ros`](https://github.com/dusty-nv/jetbot_ros) package as a reference, so much thanks to [@dusty-nv](https://github.com/dusty-nv) for the helpful software and inspiration.
 
-## ubuntu 18.04 + jetpack + jetbot install + link --> + writeup
+## Setup the SD card and NVidia's Jetbot software
+Use [this tutorial](https://jetbot.org/master/software_setup/sd_card.html) to setup NVidia's Jetbot software. On the other hand, you can flash NVidia's latest Jetpack image (v4.3+) from [here](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write) and then install and build the Jetbot packages from [here](https://github.com/NVIDIA-AI-IOT/jetbot). These images and software packages have a few features that were very useful in setting up this project:
 
-### Build jetson-inference
+* JupyterLab: The NVidia image provides a pre-installed and configured JupyterLab setup. This means you can edit, build and run code from your browser instead of using SSH and a terminal or connecting to a screen.
+* Jetbot Notebooks: The Jetbot packages also contain a bunch of example notebooks and tools to (rte)train DL models for specific applications. For example, in this project, the collision_avoidance example was retrained to detect/avoid the edges of my desk.
+* PiOLED service: The Jetbot installation also configures a service to display the IP address and the CPU/GPU/Mem usage on the PiOLED screen over I2C. The IP address is essential to use JupyterLab from the browser.
+
+### Build jetson-inference 
+(If its not already built and installed in the OS image)
 
 Clone and build the [`jetson-inference`](https://github.com/dusty-nv/jetson-inference) repo:
 
@@ -137,7 +143,7 @@ $ sudo systemctl start my_jetbot2.service
 $ sudo systemctl uninstall my_jetbot2.service
 ```
 
-More information can be found in this tutorial [here.](https://roboticsbackend.com/make-ros-launch-start-on-boot-with-robot_upstart/). Once the service is generated and enabled, the main launch file (drive_jetbot2.launch) should start running once the Jetson Nano is powered on. While the Jetson Nano takes a while to boot and the ROS code doesn't run immediately, you can tell from the colors of the LEDs. It should turn yellow once you have the joystick controller on. 
+More information can be found in this tutorial [here](https://roboticsbackend.com/make-ros-launch-start-on-boot-with-robot_upstart/). Once the service is generated and enabled, the main launch file (drive_jetbot2.launch) should start running once the Jetson Nano is powered on. While the Jetson Nano takes a while to boot and the ROS code doesn't run immediately, you can tell from the colors of the LEDs. It should turn yellow once you have the joystick controller on. 
 
 
 
