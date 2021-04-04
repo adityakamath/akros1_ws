@@ -1,0 +1,24 @@
+[submodule "src/akros_jetson"]
+	path = src/akros_jetson
+	url = https://github.com/adityakamath/akros_jetson.git
+[submodule "src/akros_joystick"]
+	path = src/akros_joystick
+	url = https://github.com/adityakamath/akros_joystick.git
+[submodule "src/arduino_sketchbook_ros"]
+	path = src/arduino_sketchbook_ros
+	url = https://github.com/adityakamath/arduino_sketchbook_ros.git
+[submodule "src/ros_imu_rtimulib"]
+	path = src/ros_imu_rtimulib
+	url = https://github.com/adityakamath/ros_imu_rtimulib.git
+[submodule "src/ros_deep_learning"]
+	path = src/ros_deep_learning
+	url = https://github.com/adityakamath/ros_deep_learning.git
+[submodule "src/ros_jetson_camera"]
+	path = src/ros_jetson_camera
+	url = https://github.com/adityakamath/ros_jetson_camera.git
+[submodule "src/akros_auto"]
+	path = src/akros_auto
+	url = https://github.com/adityakamath/akros_auto.git
+[submodule "src/akros_drive"]
+	path = src/akros_drive
+	url = https://github.com/adityakamath/akros_drive.git
