@@ -110,7 +110,7 @@ $ catkin_make
 ```
 
 ## Running the system from a terminal:
-Open a new terminal and run the following in the jetbo2_ws directory:
+Open a new terminal and run the following in the jetbot2_ws directory:
 
 ```bash
 $ source devel/setup.bash
